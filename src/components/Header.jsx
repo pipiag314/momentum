@@ -14,7 +14,7 @@ const Header = () => {
         <Link className="header-btn header-secondary-btn">
           თანამშრომლის შექმნა
         </Link>
-        <Link to="/createtask" className="header-btn header-primary-btn flex ">
+        <Link to="/createtask" className="header-btn header-primary-btn flex w-fit">
           <img src={add_icon} alt="" />{" "}
           <span className="ml-[4px]">შექმენი ახალი დავალება</span>
         </Link>
