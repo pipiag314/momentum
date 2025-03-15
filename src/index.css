@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* FONTS */
+@font-face {
+  font-family: "FiraGo";
+  src: local("FiraGo"), url("/src/fonts/FiraGO-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FiraGo";
+  src: local("FiraGo"), url("/src/fonts/FiraGO-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* reset styles */
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---tailwind stuff--- */
+
+@layer utilities, components;
+
+@layer components {
+
+  .header-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .header-primary-btn {
+    background-color: #8338ec;
+    color: #fff;
+  }
+  .header-secondary-btn {
+    color: #212529;
+    outline: 1px solid #8338EC;
+  }
+}
+
+/* --- */
+
+body {
+  font-family: "FiraGo";
+}
+
+.wrapper-container {
+  max-width: 1920px;
+  padding: 0 120px;
+  margin: 0 auto;
+}
