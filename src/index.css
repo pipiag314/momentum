@@ -2,6 +2,13 @@
 
 /* FONTS */
 @font-face {
+  font-family: "FredokaOne";
+  src: local("FredokaOne"),
+    url("/src/fonts/FredokaOne-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
   font-family: "FiraGo";
   src: local("FiraGo"), url("/src/fonts/FiraGO-Medium.otf") format("opentype");
   font-weight: 500;
@@ -32,23 +39,79 @@ h6 {
 
 /* ---tailwind stuff--- */
 
-@layer utilities, components;
+@layer utilities, components, base, theme;
+
+@layer utilities {
+  .logo {
+    font-family: "FredokaOne", sans-serif;
+    @apply font-[400] text-[32px]/[100%] tracking-[0%] text-[#8338EC];
+  }
+
+  .page-title {
+    @apply text-[34px]/[100%] font-[600] tracking-[0%];
+  }
+}
 
 @layer components {
-
+  /* header styles */
   .header-btn {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    text-wrap: nowrap;
   }
-  
+
   .header-primary-btn {
     background-color: #8338ec;
     color: #fff;
+    transition: background-color ease-out 300ms;
   }
+  .header-primary-btn:hover {
+    background-color: #b588f4;
+  }
+
   .header-secondary-btn {
     color: #212529;
-    outline: 1px solid #8338EC;
+    border: 1px solid #8338ec;
+  }
+  .header-secondary-btn:hover {
+    border-color: #b588f4;
+  }
+
+  /* home page styles */
+  .status {
+    @apply text-white p-[15px]! text-[20px]/[100%] tracking-[0%] rounded-[10px] text-center;
+  }
+
+  /* styling individual statuses backgrounds differently */
+  .status-1 {
+    @apply bg-[#F7BC30];
+  }
+  .status-2 {
+    @apply bg-[#FB5607];
+  }
+  .status-3 {
+    @apply bg-[#FF006E];
+  }
+  .status-4 {
+    @apply bg-[#3A86FF];
+  }
+
+  .task {
+    @apply p-[20px] border-[1px] border-[#F7BC30] rounded-[15px];
+  }
+
+  .task-1 {
+    @apply border-[#F7BC30];
+  }
+  .task-2 {
+    @apply border-[#FB5607];
+  }
+  .task-3 {
+    @apply border-[#FF006E];
+  }
+  .task-4 {
+    @apply border-[#3A86FF];
   }
 }
 
