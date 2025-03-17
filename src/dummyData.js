@@ -112,4 +112,100 @@ export const tasks = [
     },
     total_comments: 0,
   },
+  {
+    id: 870,
+    name: "Redberry-ს საიტის ლენდინგის დიზაინი",
+    description:
+      "შექმენი საიტის მთავარი გვერდი, რომელიც მოიცავს მთავარ სექციებს, ნავიგაციას.",
+    due_date: "2025-07-10T20:00:00.000000Z",
+    department: {
+      id: 4,
+      name: "გაყიდვები და მარკეტინგის დეპარტამენტი",
+    },
+    employee: {
+      id: 761,
+      name: "ანა",
+      surname: "კანკია",
+      avatar:
+        "https://momentum.redberryinternship.ge/storage/employee-avatars/QunXYwoRTP1TMYPC81eixMj6hTmixwg0Wa0QyfcP.png",
+      department: {
+        id: 4,
+        name: "გაყიდვები და მარკეტინგის დეპარტამენტი",
+      },
+    },
+    status: {
+      id: 2,
+      name: "პროცესში",
+    },
+    priority: {
+      id: 2,
+      name: "საშუალო",
+      icon: "https://momentum.redberryinternship.ge/storage/priority-icons/Medium.svg",
+    },
+    total_comments: 5,
+  },
+  {
+    id: 870,
+    name: "Redberry-ს საიტის ლენდინგის დიზაინი",
+    description:
+      "შექმენი საიტის მთავარი გვერდი, რომელიც მოიცავს მთავარ სექციებს, ნავიგაციას.",
+    due_date: "2025-07-10T20:00:00.000000Z",
+    department: {
+      id: 4,
+      name: "გაყიდვები და მარკეტინგის დეპარტამენტი",
+    },
+    employee: {
+      id: 761,
+      name: "ანა",
+      surname: "კანკია",
+      avatar:
+        "https://momentum.redberryinternship.ge/storage/employee-avatars/QunXYwoRTP1TMYPC81eixMj6hTmixwg0Wa0QyfcP.png",
+      department: {
+        id: 4,
+        name: "გაყიდვები და მარკეტინგის დეპარტამენტი",
+      },
+    },
+    status: {
+      id: 3,
+      name: "მზად ტესტირებისთვის",
+    },
+    priority: {
+      id: 2,
+      name: "საშუალო",
+      icon: "https://momentum.redberryinternship.ge/storage/priority-icons/Medium.svg",
+    },
+    total_comments: 3,
+  },
+  {
+    id: 870,
+    name: "Redberry-ს საიტის ლენდინგის დიზაინი",
+    description:
+      "შექმენი საიტის მთავარი გვერდი, რომელიც მოიცავს მთავარ სექციებს, ნავიგაციას.",
+    due_date: "2025-07-10T20:00:00.000000Z",
+    department: {
+      id: 4,
+      name: "გაყიდვები და მარკეტინგის დეპარტამენტი",
+    },
+    employee: {
+      id: 761,
+      name: "ანა",
+      surname: "კანკია",
+      avatar:
+        "https://momentum.redberryinternship.ge/storage/employee-avatars/QunXYwoRTP1TMYPC81eixMj6hTmixwg0Wa0QyfcP.png",
+      department: {
+        id: 4,
+        name: "გაყიდვები და მარკეტინგის დეპარტამენტი",
+      },
+    },
+    status: {
+      id: 4,
+      name: "დასრულებული",
+    },
+    priority: {
+      id: 2,
+      name: "საშუალო",
+      icon: "https://momentum.redberryinternship.ge/storage/priority-icons/Medium.svg",
+    },
+    total_comments: 8,
+  },
 ];

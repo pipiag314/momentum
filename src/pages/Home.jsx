@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Status from "../components/Status";
 import Task from "../components/Task";
 import { statuses, tasks } from "../dummyData";
@@ -11,9 +12,11 @@ const Home = () => {
           return (
             <Status key={status.id} status={status}>
               {tasks.map((task) => {
-                if(task.status.id === status.id) {
+                if (task.status.id === status.id) {
                   return (
-                    <Task key={task.id} task={task} />
+                    <Link key={task.id} to={`/${task.id}`}>
+                      <Task task={task} />
+                    </Link>
                   );
                 }
               })}

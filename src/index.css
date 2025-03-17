@@ -98,7 +98,7 @@ h6 {
   }
 
   .task {
-    @apply p-[20px] border-[1px] border-[#F7BC30] rounded-[15px];
+    @apply p-[20px] border-[1px] border-[#F7BC30] rounded-[15px] flex flex-col gap-[28px];
   }
 
   .task-1 {
@@ -113,6 +113,48 @@ h6 {
   .task-4 {
     @apply border-[#3A86FF];
   }
+
+  .task-priority {
+    @apply flex items-center gap-[4px] border-[0.5px] text-[12px] p-[4px] rounded-[5px] min-w-[86px];
+  }
+
+  .task-priority-1 {
+    @apply border-[#08A508] text-[#08A508];
+  }
+  .task-priority-2 {
+    @apply border-[#FFBE0B] text-[#FFBE0B];
+  }
+  .task-priority-3 {
+    @apply border-[#FA4D4D] text-[#FA4D4D];
+  }
+
+  .department-badge {
+    @apply rounded-[15px] text-white min-w-[88px] py-[5px] px-[9px] text-center text-[12px];
+  }
+  .department-badge-1 {
+    @apply bg-[#FF66A8];
+  }
+  .department-badge-2 {
+    @apply bg-[#FD9A6A];
+  }
+  .department-badge-3 {
+    @apply bg-[#89B6FF];
+  }
+  .department-badge-4 {
+    @apply bg-[#FFD86D];
+  }
+
+
+
+  /* Task Page Styles */
+
+  .task-title {
+    @apply mt-[12px]! font-[500] text-[34px]/[100%] tracking-[0%] text-[#212529];
+  }
+  .task-description {
+    @apply font-[400] text-[18px]/[150%] tracking-[0%] mt-[36px]!
+  }
+  
 }
 
 /* --- */
