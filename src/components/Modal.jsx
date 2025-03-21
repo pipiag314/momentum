@@ -5,6 +5,9 @@ import { bytesToKB } from "../utils";
 import { createNewEmployee } from "../API/createNewEmployee";
 import { useDepartmentsStore } from "../store/store";
 
+import close_icon from "/src/assets/close-icon.svg";
+import file_icon from "/src/assets/file-icon.svg";
+
 const Modal = ({ toggleModal }) => {
   const {
     register,
@@ -52,11 +55,11 @@ const Modal = ({ toggleModal }) => {
       <div
         onClick={toggleModal}
         className="absolute w-[100vw] h-[200vh] z-[10] top-0 right-0 left-0 bottom-0 bg-[#0D0F1026] backdrop-blur-[10px]"></div>
-      <div className="bg-white px-[50px] z-[100] pt-[40px] pb-[60px] absolute top-[100px] left-[50%] translate-x-[-50%] flex flex-col gap-[37px]">
+      <div className="bg-white px-[50px] z-[100] pt-[40px] pb-[60px] absolute top-[20px] left-[50%] translate-x-[-50%] flex flex-col gap-[37px]">
         <img
           onClick={toggleModal}
           className="w-[40px] h-[40px] cursor-pointer self-end"
-          src="./src/assets/close-icon.svg"
+          src={close_icon}
           alt="close icon"
         />
         <div>
@@ -141,7 +144,7 @@ const Modal = ({ toggleModal }) => {
                     ) : (
                       <div className="flex flex-col items-center">
                         <img
-                          src="./src/assets/file-icon.svg"
+                          src={file_icon}
                           className="w-[24px] h-[24px]"
                           alt="file icon"
                         />

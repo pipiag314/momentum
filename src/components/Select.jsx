@@ -4,6 +4,9 @@ import PrioritySelect from "./PrioritySelect";
 import EmployeeSelect from "./EmployeeSelect";
 import { useFilterStore } from "../store/store";
 
+import arrow_icon from "/src/assets/arrow-icon.svg"
+
+
 const Select = () => {
   const [selected, setSelected] = useState("");
 
@@ -38,7 +41,7 @@ const Select = () => {
           <span>დეპარტამენტი</span>
           <img
             className="hover:fill-[#8338EC]"
-            src="./src/assets/arrow-icon.svg"
+            src={arrow_icon}
             alt="arrow icon"
           />
         </div>
@@ -48,7 +51,7 @@ const Select = () => {
             selected === "priority" && "text-[#8338EC]"
           }`}>
           <span>პრიორიტეტი</span>
-          <img src="./src/assets/arrow-icon.svg" alt="arrow icon" />
+          <img src={arrow_icon} alt="arrow icon" />
         </div>
         <div
           onClick={() => showOptions("employee")}
@@ -56,7 +59,7 @@ const Select = () => {
             selected === "employee" && "text-[#8338EC]"
           }`}>
           <span>თანამშრომელი</span>
-          <img src="./src/assets/arrow-icon.svg" alt="arrow icon" />
+          <img src={arrow_icon} alt="arrow icon" />
         </div>
       </div>
 

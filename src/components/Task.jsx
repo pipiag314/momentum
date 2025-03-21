@@ -1,3 +1,5 @@
+import comment_icon from "/src/assets/comments-icon.svg";
+
 const Task = ({ task }) => {
   return (
     <div className={`task task-${task.status.id}`}>
@@ -20,7 +22,7 @@ const Task = ({ task }) => {
       <div className="flex justify-between">
         <img src={task.employee.avatar} className="rounded-full w-[32px] h-[32px] object-cover" alt="emploee avatar" />
         <div className="flex items-center gap-[4px]">
-          <img src="./src/assets/comments-icon.svg" alt="comment icon" />
+          <img src={comment_icon} alt="comment icon" />
           <span>{task.total_comments}</span>
         </div>
       </div>
