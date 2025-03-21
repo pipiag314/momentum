@@ -1,5 +1,6 @@
 import { useCommentsStore } from "../store/store";
 import { createNewComment } from "../API/createNewComment";
+import reply_icon from "/src/assets/reply-icon.svg";
 
 const TaskComment = ({ task }) => {
   const comments = useCommentsStore((state) => state.comments);
@@ -63,7 +64,7 @@ const TaskComment = ({ task }) => {
               <button className="flex items-center gap-[6px] text-[12px]/[100%] text-[#8338EC] cursor-pointer">
                 <img
                   className="w-[16px] h-[16px]"
-                  src="../src/assets/reply-icon.svg"
+                  src={reply_icon}
                   alt="reply icon"
                 />{" "}
                 უპასუხე
