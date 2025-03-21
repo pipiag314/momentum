@@ -1,5 +1,8 @@
 import { useStatusesStore } from "../store/store";
 import { changeTaskStatus } from "../API/changeTaskStatus";
+import status_icon from "/src/assets/status-icon.svg";
+import employee_icon from "/src/assets/user-icon.svg";
+import calendar_icon from "/src/assets/calendar-icon.svg";
 
 const SingleTask = ({ task }) => {
 
@@ -26,7 +29,7 @@ const SingleTask = ({ task }) => {
         <h3>დავალების დეტალები</h3>
         <div className="mt-[18px] flex items-center gap-[70px]">
           <div className="flex items-center gap-[5px] py-[15px]">
-            <img src="./src/assets/status-icon.svg" alt="status icon" />
+            <img src={status_icon} alt="status icon" />
             <span>სტატუსი</span>
           </div>
           <div>
@@ -54,7 +57,7 @@ const SingleTask = ({ task }) => {
         </div>
         <div className="flex items-center gap-[70px]">
           <div className="flex items-center gap-[5px] py-[15px]">
-            <img src="./src/assets/user-icon.svg" alt="status icon" />
+            <img src={employee_icon} alt="employee icon" />
             <span>თანამშრომელი</span>
           </div>
           <div className="flex items-center gap-[50px] relative">
@@ -73,7 +76,7 @@ const SingleTask = ({ task }) => {
         </div>
         <div className="flex items-center gap-[70px]">
           <div className="flex items-center gap-[5px] py-[15px]">
-            <img src="./src/assets/calendar-icon.svg" alt="status icon" />
+            <img src={calendar_icon} alt="calendar icon" />
             <span>დავალების ვადა</span>
           </div>
           <div className="flex items-center gap-[50px] relative">
