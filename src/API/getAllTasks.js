@@ -1,9 +1,9 @@
 import axios from "axios";
 
-export const getAllEmployees = async () => {
+export const getAllTasks = async () => {
   try {
     const res = await axios.get(
-      "https://momentum.redberryinternship.ge/api/employees",
+      `https://momentum.redberryinternship.ge/api/tasks`,
       {
         headers: {
           Accept: "application/json",
