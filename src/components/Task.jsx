@@ -15,10 +15,10 @@ const Task = ({ task }) => {
       </div>
       <div>
         <h3>{task.name}</h3>
-        <p className="mt-[12px]">{task.description}</p>
+        <p className="mt-[12px]">{task.description.length > 100 ? task.description.slice(0, 100)+ "..." : task.description}</p>
       </div>
       <div className="flex justify-between">
-        <img src={task.employee.avatar} width={32} height={32} className="rounded-full" alt="emploee avatar" />
+        <img src={task.employee.avatar} className="rounded-full w-[32px] h-[32px] object-cover" alt="emploee avatar" />
         <div className="flex items-center gap-[4px]">
           <img src="./src/assets/comments-icon.svg" alt="comment icon" />
           <span>{task.total_comments}</span>
