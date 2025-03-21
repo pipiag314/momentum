@@ -79,6 +79,25 @@ h6 {
   }
 
   /* home page styles */
+
+  input[type=checkbox] {
+    padding: 2px;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 6px;
+    vertical-align: middle;
+    border: 1.5px solid #8338EC;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  input[type=checkbox]:checked {
+    content: url("./src/assets/tick-icon.svg");
+  }
+  
   .status {
     @apply text-white p-[15px]! text-[20px]/[100%] tracking-[0%] rounded-[10px] text-center;
   }
@@ -155,6 +174,33 @@ h6 {
     @apply font-[400] text-[18px]/[150%] tracking-[0%] mt-[36px]!
   }
   
+
+
+  /* Modal styles */
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 45px;
+  }
+  .form-grid div:nth-of-type(3) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  
+  .input-box {
+    @apply flex flex-col
+  }
+  .input-title {
+    @apply font-[500] text-[14px]/[100%] tracking-[0%] text-[#343A40]
+  }
+  .input-box input {
+    @apply border-1 border-[#CED4DA] bg-white h-[42px] p-[10px] rounded-[6px] mt-[3px] min-w-[380px]
+  }
+
+  
 }
 
 /* --- */
@@ -168,3 +214,7 @@ body {
   padding: 0 120px;
   margin: 0 auto;
 }
+
+
+
+

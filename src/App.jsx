@@ -4,8 +4,40 @@ import Home from "./pages/Home";
 import Header from "./components/Header";
 import CreateTask from "./pages/CreateTask";
 import TaskPage from "./pages/TaskPage";
+import { useEffect } from "react";
+import { useDepartmentsStore, useEmployeesStore, usePrioritiesStore, useStatusesStore, useTasksStore } from "./store/store";
 
 function App() {
+  const { tasks, fetchTasks } = useTasksStore();
+  const { statuses, isStatusesLoading, fetchStatuses } = useStatusesStore();
+  const { departments, fetchDepartments } = useDepartmentsStore();
+  const { priorities, fetchPriorities } = usePrioritiesStore();
+  const { employees, fetchEmployees } = useEmployeesStore();
+  
+
+  useEffect(() => {
+    if (tasks.length === 0) {
+      //avoiding unnecessary API calls
+        fetchTasks();
+      }
+    if (statuses.length === 0) {
+      //avoiding unnecessary API calls
+      fetchStatuses();
+    }
+    if (departments.length === 0) {
+      //avoiding unnecessary API calls
+      fetchDepartments();
+    }
+    if (priorities.length === 0) {
+      //avoiding unnecessary API calls
+      fetchPriorities();
+    }
+    if (employees.length === 0) {
+      //avoiding unnecessary API calls
+      fetchEmployees();
+    }
+  }, []);
+  
   return (
     <div className="App">
       <div className="wrapper-container">
